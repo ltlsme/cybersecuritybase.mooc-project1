@@ -128,5 +128,3 @@ LOGIN_REDIRECT_URL = '/polls/'
 LOGIN_URL = '/polls/accounts/login'
 
 
-#http://localhost:9000/csrf_attack.html
-#py -m http.server 9000

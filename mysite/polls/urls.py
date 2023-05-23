@@ -12,5 +12,7 @@ urlpatterns = [
     path('accounts/login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
     path('accounts/', views.AccountsView, name = 'accounts'),
     path('accounts/change_password', views.change_password, name='change_password'),
+    path('accounts/logout/', auth_views.LogoutView.as_view(next_page='polls:index'), name='logout'), #new
+    #path('accounts/account_creation', name='')
 
 ]

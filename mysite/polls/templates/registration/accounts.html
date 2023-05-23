@@ -7,8 +7,9 @@
 </head>
 <body>
 <p> This is your username: {{user.username}}</p>
-
-
+<!--new-->
+<a href="{% url 'polls:index' %}">Back to main page</a> <br><br>
+<a href="{% url 'polls:change_password' %}">Change Password</a>
 
 </body>
 </html>
